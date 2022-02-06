@@ -13,7 +13,7 @@ def Menu():
 
     print("Selected File: ", os.path.basename(os.path.normpath(haarCascadeFile)), "\n\n")
 
-    print("FACE DETECTOR v3\n\n")
+    print("DETECTOR\n\n")
     print("1 - Image\n")
     print("2 - Video\n")
     print("3 - Webcam\n\n")
@@ -107,10 +107,6 @@ def Menu():
         print("Invalid choice.")
         sleep(1)
         Menu()
-
-    # OTHERS #
-    # for face in face_coordinates:
-    #     print(face_coordinates)
 
 print("\nChoose Haar Cascade .xml\n\n")
 sleep(1)
