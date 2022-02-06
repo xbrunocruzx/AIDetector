@@ -112,9 +112,6 @@ def Menu():
     # for face in face_coordinates:
     #     print(face_coordinates)
 
-# Import Trained Data (In This Case, Frontal Faces) #
-#trained_face_data = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-
 print("\nChoose Haar Cascade .xml\n\n")
 sleep(1)
 
