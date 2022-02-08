@@ -99,7 +99,7 @@ def Menu():
         sleep(1)
         Menu()
 
-print("\nChoose Haar Cascade .xml\n\n")
+print("\nChoose HaarCascade .xml File\n\n")
 sleep(1)
 
 Menu()
