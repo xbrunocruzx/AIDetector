@@ -7,10 +7,6 @@ from tkinter.filedialog import askopenfilename
 
 def Menu():
 
-    Tk().withdraw()
-    haarCascadeFile = askopenfilename(filetypes=[("XML", ".xml")])
-    trained_data = cv2.CascadeClassifier(haarCascadeFile)
-
     print("Selected File: ", os.path.basename(os.path.normpath(haarCascadeFile)), "\n\n")
 
     print("DETECTOR\n\n")
@@ -101,5 +97,9 @@ def Menu():
 
 print("\nChoose HaarCascade .xml File\n\n")
 sleep(1)
+
+Tk().withdraw()
+haarCascadeFile = askopenfilename(filetypes=[("XML", ".xml")])
+trained_data = cv2.CascadeClassifier(haarCascadeFile)
 
 Menu()
